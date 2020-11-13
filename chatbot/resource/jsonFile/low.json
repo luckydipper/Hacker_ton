@@ -12,7 +12,7 @@
               "Good day"
             ],
             "responses": [
-              "안녕",
+              "ㅎㅇㅎㅇ",
               "Hello, thanks for visiting",
               "Hi there, what can I do for you?",
               "Hi there, how can I help?"
@@ -72,6 +72,7 @@
           {
             "tag": "funny",
             "patterns": [
+              "한국어는 training 안 되지?",
               "Tell me a joke!",
               "Tell me something funny!",
               "Do you know a joke?"
