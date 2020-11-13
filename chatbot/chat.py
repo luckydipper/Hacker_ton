@@ -92,7 +92,7 @@ model.eval()
 
 bot_name = "세미"
 
-print(f"""quit을 입력하면 끌 수 있습니다.
+print(f"""'그만하자'를 입력하면 끌 수 있습니다.
 
         안녕! 난 {bot_name}이야.
         난 영어를 더 잘해!
@@ -100,7 +100,7 @@ print(f"""quit을 입력하면 끌 수 있습니다.
 while True:
     sentence = input("You: ")
     
-    if sentence == "quit":
+    if sentence == "그만하자":
         print("담에 또봐")
         break
     
