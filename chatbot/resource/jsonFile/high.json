@@ -81,7 +81,7 @@
             "patterns": [
               "Is there anything worth watching on Netflix?",
               "netflx",
-              "What kind of movies do you like?"
+              "Do you like Netflix?"
             ],
             "responses": [
               "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
@@ -91,13 +91,14 @@
           {
             "tag": "music",
             "patterns": [
-              "Is there anything worth watching on Netflix?",
-              "netflx",
-              "What kind of movies do you like?"
+              "What kind of songs do you like?",
+              "Please recommend some music",
+              "Do you have any good songs these days?"
             ],
             "responses": [
-              "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-              "What did the buffalo say when his son left for college? Bison."
+              "머쉬베놈~ TFT모바일 두둥등장!",
+              "난 발라드를 좋아해. '너의 번호'를 누르고 알고 있어?",
+              "팝송 좋아해! 옛날 노래긴 한데, Closer 같이 부를래?"
             ]
           },
           {
