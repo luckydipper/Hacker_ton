@@ -57,15 +57,17 @@ mode = set_mode()
 if mode == 0:
     original_data_name = 'low.json'
     train_data_name = "low.pth"
+    print("training file")
     train.main(original_data_name, train_data_name)
 elif mode == 1:
     original_data_name = 'middle.json'
     train_data_name = "middle.pth"
+    print("training file")
     train.main(original_data_name, train_data_name)
 elif mode == 2:
     original_data_name = 'high.json'
     train_data_name = "high.pth"
-    #check_exist(original_data_name, train_data_name)
+    print("training file")
     train.main(original_data_name, train_data_name)
 
 bot_name = "Sam"
