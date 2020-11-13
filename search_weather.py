@@ -31,7 +31,7 @@ weather_dict = {'tag':"weather",
                 "patterns":["What's the weather like today?",
                             "How's the weather today?",
                             "Weather"],
-                "responses":All}
+                "responses":[All]}
 print(weather_dict)
 
 
