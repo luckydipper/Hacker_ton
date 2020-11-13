@@ -9,7 +9,7 @@ from torch.utils.data import Dataset, DataLoader
 from nltk_utils import bag_of_words, tokenize, stem
 from model import NeuralNet
 
-def main(read_dir = "intents.json", write_dir = "data.pth"):
+def main(read_dir = "high.json", write_dir = "high.pth"):
 
     base_json_dir = "resource/jsonFile/" + read_dir
     base_pth_dir = "resource/pthFile/" + write_dir

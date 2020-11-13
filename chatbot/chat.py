@@ -1,12 +1,12 @@
 import random
 import json
-
 import torch
 
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 
 import train
+import translation
 
 def recheck(mode):
     check = input(f"{mode} is ok? [Y] or [N]")
@@ -70,7 +70,7 @@ elif mode == 2:
     print("training file")
     train.main(original_data_name, train_data_name)
 
-bot_name = "Sam"
+
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -90,18 +90,27 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
+bot_name = "세미"
 
-print("Let's chat! (type 'quit' to exit)")
+print(f"""quit을 입력하면 끌 수 있습니다.
+
+        안녕! 난 {bot_name}이야.
+        난 영어를 더 잘해!
+        영어로, 한 문장씩, 질문해 주면 좋겠어!""")
 while True:
     sentence = input("You: ")
     
     if sentence == "quit":
+        print("담에 또봐")
         break
+    
+    sentence = translation.main(sentence)
 
     sentence = tokenize(sentence)
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
-    X = torch.from_numpy(X).to(device)
+    X = torch.from_numpy(X).to(
+        device)
 
     output = model(X)
     _, predicted = torch.max(output, dim=1)
@@ -116,4 +125,10 @@ while True:
                 result = random.choice(intent['responses'])
                 print(f"{bot_name}: {result}")
     else:
-        print(f"{bot_name}: I do not understand...")
+        # 모를 때, 대답
+        if mode == 2:
+            print(f"{bot_name}: 무슨 말 하는지 모르겠다. ㅜㅜ")
+        elif mode == 1:
+            print(f"{bot_name}: 뭐라고?")
+        elif mode == 0:
+            print(f"{bot_name}: ?")
