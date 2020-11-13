@@ -131,3 +131,5 @@ dmypy.json
 *.vscode
 
 __pycache__
+
+data.pth
