@@ -11,7 +11,10 @@ from model import NeuralNet
 
 def main(read_dir = "intents.json", write_dir = "data.pth"):
 
-    with open(read_dir, "r", encoding="UTF-8") as file:
+    base_json_dir = "resource/jsonFile/" + read_dir
+    base_pth_dir = "resource/pthFile/" + write_dir
+
+    with open(base_json_dir, "r", encoding="UTF-8") as file:
         intents = json.load(file)
 
     all_words = []
@@ -115,9 +118,9 @@ def main(read_dir = "intents.json", write_dir = "data.pth"):
     "tags": tags
     }
 
-    torch.save(data, write_dir)
+    torch.save(data, base_pth_dir)
 
-    print(f'training complete. write_dir saved to {write_dir}')
+    print(f'training complete. write_dir saved to {base_pth_dir}')
 
 if __name__ == "__main__":
     main()
