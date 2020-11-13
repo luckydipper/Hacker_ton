@@ -30,7 +30,7 @@ def main(read_dir = "high.json", write_dir = "high.pth"):
             all_words.extend(w)
             xy.append((w, tag))
 
-    ignore_word = [",", ".", "'", '"', "?", "!", "^", "@", "#", "_", "-"] #we need, regular expression
+    ignore_word = [",", ".", "'", '"', "?", "!", "^", "@", "#", "_", "-", "~"] #we need, regular expression
     all_words = [stem(w) for w in all_words if w not in ignore_word] #this is better than using map
     all_words = sorted(set(all_words))
     tags = sorted(set(tags))# for order

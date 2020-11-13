@@ -7,12 +7,12 @@
               "Hi",
               "Hey",
               "How are you",
-              "Is anyone there?",
               "Hello",
-              "Good day"
+              "Good day",
+              "nice to meet you"
             ],
             "responses": [
-              "안녕?",
+              "하이 하이~",
               "너가 있어 행복한 하루야"
             ]
           },
@@ -43,8 +43,8 @@
               "Is there anything you need to do?"
             ],
             "responses": [
-              "영화 보자!",
-              "게임하자! 나 엄청 잘해",
+              "영화보는데? 같이 보자!",
+              "게임하고 있어. 듀오할래?",
               "너 생각하면 즐거운 걸?"
             ]
           },
@@ -54,12 +54,11 @@
               "What kind of games do you like?",
               "What is your LOL rank tear?",
               "Do you play overwatch?",
-              "League of legends is funny?",
-              ""
+              "League of legends is?"
             ],
             "responses": [
               "롤도 재밌고 오버워치도 재밌고",
-              "설마? 망겜하니? -돌-이나 -메-하니?",
+              "설마? 망겜하니? 돌겜이나 메이플 하니?",
               "난 옵치도 롤도 다이아야. 다음에 시간나면 같이 하자"
             ]
           },
@@ -68,12 +67,12 @@
             "patterns": [
               "Tell me a joke!",
               "Tell me something funny!",
-              "Do you know a joke?",
-              "LOL"
+              "Do you know a joke?"
             ],
             "responses": [
-              "난 재미 없는 사람인데. 미안, 더 재밌어질게!",
-              "나랑 사귈래?"
+              "나랑 결혼하자!",
+              "나랑 사귈래?",
+              "잼은 냉장고에 있어..."
             ]
           },
           {
@@ -81,16 +80,21 @@
             "patterns": [
               "Is there anything worth watching on Netflix?",
               "netflx",
+              "movie",
+              "movie recomendation",
               "Do you like Netflix?"
             ],
             "responses": [
-              "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-              "What did the buffalo say when his son left for college? Bison."
+              "기묘한 이야기? 재밌다던데?",
+              "요즘, 종이의 집 보는 중인데, 아아 스포하면 안 되지!"
             ]
           },
           {
             "tag": "music",
             "patterns": [
+              "music",
+              "song",
+              "melody",
               "What kind of songs do you like?",
               "Please recommend some music",
               "Do you have any good songs these days?"
@@ -117,8 +121,7 @@
             "tag": "homework",
             "patterns": [
               "I've got too many assignments.",
-              "I don't want to do my homework.",
-              "Do you know a joke?"
+              "I don't want to do my homework."
             ],
             "responses": [
               "난 과제 없이 사는데~ 부럽지!",
@@ -131,8 +134,7 @@
             "tag": "Love",
             "patterns": [
               "I love you",
-              "I don't want to do my homework.",
-              "Do you know a joke?"
+              "I don't want to do my homework."
             ],
             "responses": [
               "나두 사랑해!",

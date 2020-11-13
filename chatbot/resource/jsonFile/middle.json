@@ -1,85 +1,137 @@
 {
-        "intents": [
-          {
-            "tag": "greeting",
-            "patterns": [
-              "For test see saw wanted",
-              "Hi",
-              "Hey",
-              "How are you",
-              "Is anyone there?",
-              "Hello",
-              "Good day"
-            ],
-            "responses": [
-              "안녕",
-              "Hello, thanks for visiting",
-              "Hi there, what can I do for you?",
-              "Hi there, how can I help?"
-            ]
-          },
-          {
-            "tag": "goodbye",
-            "patterns": ["Bye", "See you later", "Goodbye"],
-            "responses": [
-              "See you later, thanks for visiting",
-              "Have a nice day",
-              "Bye! Come back again soon."
-            ]
-          },
-          {
-            "tag": "thanks",
-            "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-            "responses": ["Happy to help!", "Any time!", "My pleasure"]
-          },
-          {
-            "tag": "items",
-            "patterns": [
-              "Which items do you have?",
-              "What kinds of items are there?",
-              "What do you sell?"
-            ],
-            "responses": [
-              "We sell coffee and tea",
-              "We have coffee and tea"
-            ]
-          },
-          {
-            "tag": "payments",
-            "patterns": [
-              "Do you take credit cards?",
-              "Do you accept Mastercard?",
-              "Can I pay with Paypal?",
-              "Are you cash only?"
-            ],
-            "responses": [
-              "We accept VISA, Mastercard and Paypal",
-              "We accept most major credit cards, and Paypal"
-            ]
-          },
-          {
-            "tag": "delivery",
-            "patterns": [
-              "How long does delivery take?",
-              "How long does shipping take?",
-              "When do I get my delivery?"
-            ],
-            "responses": [
-              "Delivery takes 2-4 days",
-              "Shipping takes 2-4 days"
-            ]
-          },
-          {
-            "tag": "funny",
-            "patterns": [
-              "Tell me a joke!",
-              "Tell me something funny!",
-              "Do you know a joke?"
-            ],
-            "responses": [
-              "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-              "What did the buffalo say when his son left for college? Bison."
-            ]
-          }
-        ]
-      }
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Dude",
+        "Hi",
+        "Hey",
+        "How are you",
+        "Hello",
+        "Good day",
+        "nice to meet you"
+      ],
+      "responses": [
+        "안녕?",
+        "오랜만"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye",
+                    "Have a nice day",
+                    "See you later",
+                    "Goodbye",
+                    "Good night, sweet dreams"],
+      "responses": [
+        "바이 바이",
+        "언젠가 또 봅시다"
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["나두 고마워"]
+    },
+    {
+      "tag": "what_doing",
+      "patterns": [
+        "what are you doing?",
+        "Bored",
+        "Is there anything you need to do?"
+      ],
+      "responses": [
+        "과제 해야지",
+        "롤 하고 있는데 같이하실?",
+        "옵치 같이 할려?"
+      ]
+    },
+    {
+      "tag": "game",
+      "patterns": [
+        "What kind of games do you like?",
+        "What is your LOL rank tear?",
+        "Do you play overwatch?",
+        "League of legends is?"
+      ],
+      "responses": [
+        "롤도 재밌고 오버워치도 재밌고",
+        "과제 끝나고 게임 합시다.",
+        "다음에 시간나면 같이 하자"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "ㄹㅇㅋㅋ",
+        "전투기 조종사들이 제일 무서워하는 것은? 대공포.",
+        "상어가 만만한 이유는? 조스로 보기 때문"
+      ]
+    },
+    {
+      "tag": "movie",
+      "patterns": [
+        "Is there anything worth watching on Netflix?",
+        "netflx",
+        "movie",
+        "movie recomendation",
+        "Do you like Netflix?"
+      ],
+      "responses": [
+        "영화를 왜보냐? 그 돈으로 뜨끈한 국밥에 밥 말아 먹지",
+        "기묘한 이야기 볼만 함."
+      ]
+    },
+    {
+      "tag": "music",
+      "patterns": [
+        "music",
+        "song",
+        "melody",
+        "What kind of songs do you like?",
+        "Please recommend some music",
+        "Do you have any good songs these days?"
+      ],
+      "responses": [
+        "요즘 좋은 노래가 없다. 너가 나중에 추천 해주삼"
+      ]
+    },
+    {
+      "tag": "unother_say",
+      "patterns": [
+        "Can't you say anything else?",
+        "You can't talk.",
+        "Say something else."
+      ],
+      "responses": [
+        "어, 좀 더 업그레이드 되야할 듯",
+        "기다려, 더 업그레이드 될테니깐"
+      ]
+    },
+    {
+      "tag": "homework",
+      "patterns": [
+        "I've got too many assignments.",
+        "I don't want to do my homework."
+      ],
+      "responses": [
+        "인생..ㅋㅋㅋ"
+      ]
+    },
+    {
+      "tag": "Love",
+      "patterns": [
+        "I love you",
+        "I don't want to do my homework."
+      ],
+      "responses": [
+        "그래서, 누구를 사랑함?"
+      ]
+    }
+  ]
+}
